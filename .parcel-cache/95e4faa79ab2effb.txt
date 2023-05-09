@@ -1,4 +1,4 @@
-8264
+8266
 52/home/shivendra/starter/forkify-flowchart-part-1.png1644221921000000000 0
 36/home/shivendra/starter/package.json1682540989543747000 0
 52/home/shivendra/starter/src/sass/_searchResults.scss1644221921000000000 0
@@ -6,12 +6,12 @@
 45/home/shivendra/starter/src/sass/_recipe.scss1644221921000000000 0
 46/home/shivendra/starter/src/sass/_preview.scss1644221921000000000 0
 32/home/shivendra/starter/src/sass1644221921000000000 1
-50/home/shivendra/starter/src/js/views/recipeView.js1682962932028370103 0
-51/home/shivendra/starter/src/js/views/resultsView.js1683033183062784253 0
+50/home/shivendra/starter/src/js/views/recipeView.js1683644946072358703 0
+51/home/shivendra/starter/src/js/views/resultsView.js1683645745553609925 0
 47/home/shivendra/starter/src/js/views/helpers.js1682883518486882259 0
-36/home/shivendra/starter/src/js/views1683033181942810581 1
+36/home/shivendra/starter/src/js/views1683047877039160819 1
 39/home/shivendra/starter/src/js/model.js1683032590634218134 0
-44/home/shivendra/starter/src/js/controller.js1683032921569767310 0
+44/home/shivendra/starter/src/js/controller.js1683645559603276845 0
 40/home/shivendra/starter/src/js/config.js1683031198035563931 0
 41/home/shivendra/starter/src/img/icons.svg1644221921000000000 0
 58/home/shivendra/starter/node_modules/domutils/lib/index.js1682880086792626142 0
@@ -948,6 +948,7 @@
 84/home/shivendra/starter/node_modules/@parcel/optimizer-terser/src/TerserOptimizer.js1682342722602850000 0
 65/home/shivendra/starter/node_modules/@parcel/optimizer-terser/src1682342722582728000 1
 61/home/shivendra/starter/node_modules/@parcel/optimizer-terser1682342722603106000 1
+44/home/shivendra/starter/src/js/views/View.js1683650249668755132 0
 69/home/shivendra/starter/node_modules/@parcel/transformer-json/LICENSE1682880086760630404 0
 74/home/shivendra/starter/node_modules/@parcel/transformer-json/package.json1682880086796625610 0
 88/home/shivendra/starter/node_modules/lmdb/dependencies/lmdb/libraries/liblmdb/mdb_dump.c1682880086912610159 0
@@ -3255,7 +3256,7 @@
 69/home/shivendra/starter/node_modules/core-js/es/typed-array/reduce.js1682418165287020000 0
 79/home/shivendra/starter/node_modules/core-js/actual/typed-array/uint32-array.js1682418165506773000 0
 68/home/shivendra/starter/node_modules/caniuse-lite/data/regions/CK.js1682880086936606963 0
-49/home/shivendra/starter/dist/favicon.8b2f57bf.png1683031198163564071 0
+49/home/shivendra/starter/dist/favicon.8b2f57bf.png1683644556755490898 0
 60/home/shivendra/starter/node_modules/core-js/es/parse-int.js1682418165253278000 0
 69/home/shivendra/starter/node_modules/core-js/es/array/virtual/find.js1682418164930068000 0
 69/home/shivendra/starter/node_modules/core-js/es/instance/pad-start.js1682418165247559000 0
@@ -3265,7 +3266,7 @@
 80/home/shivendra/starter/node_modules/caniuse-lite/data/features/sharedworkers.js1682880087052591525 0
 60/home/shivendra/starter/node_modules/source-map-js/README.md1682880086868616020 0
 72/home/shivendra/starter/node_modules/core-js/modules/esnext.string.at.js1682418164874824000 0
-46/home/shivendra/starter/dist/index.e37f48ea.js1683033079685330772 0
+46/home/shivendra/starter/dist/index.e37f48ea.js1683650249704755580 0
 60/home/shivendra/starter/node_modules/core-js/es/math/log2.js1682418165183204000 0
 68/home/shivendra/starter/node_modules/update-browserslist-db/index.js1682880086780627741 0
 71/home/shivendra/starter/node_modules/core-js/internals/object-assign.js1682418165227555000 0
@@ -3872,7 +3873,7 @@
 66/home/shivendra/starter/node_modules/core-js/es/array/to-sorted.js1682418165446496000 0
 87/home/shivendra/starter/node_modules/caniuse-lite/data/features/spellcheck-attribute.js1682880087052591525 0
 90/home/shivendra/starter/node_modules/@swc/helpers/src/_object_without_properties_loose.mjs1682880600695193803 0
-28/home/shivendra/starter/dist1683033079685330772 1
+28/home/shivendra/starter/dist1683650249704755580 1
 81/home/shivendra/starter/node_modules/@swc/helpers/lib/_tagged_template_literal.js1682880600679194705 0
 62/home/shivendra/starter/node_modules/core-js/full/url/index.js1682418165077589000 0
 49/home/shivendra/starter/node_modules/css-what/lib1682880600623197860 1
@@ -3941,7 +3942,7 @@
 74/home/shivendra/starter/node_modules/@parcel/transformer-babel/lib/flow.js1682342722883393000 0
 87/home/shivendra/starter/node_modules/core-js/modules/esnext.set.symmetric-difference.js1682418164873740000 0
 54/home/shivendra/starter/node_modules/core-js/es/object1682418165532178000 1
-51/home/shivendra/starter/dist/index.f7626f62.css.map1683031198151564058 0
+51/home/shivendra/starter/dist/index.f7626f62.css.map1683644556751491808 0
 75/home/shivendra/starter/node_modules/@parcel/core/test/ParcelConfig.test.js1682880086964603233 0
 68/home/shivendra/starter/node_modules/caniuse-lite/data/regions/ER.js1682880087016596311 0
 67/home/shivendra/starter/node_modules/css-what/lib/commonjs/parse.js1682880600635197184 0
@@ -3949,7 +3950,7 @@
 76/home/shivendra/starter/node_modules/core-js/full/reflect/delete-metadata.js1682418164719800000 0
 70/home/shivendra/starter/node_modules/core-js/full/string/trim-start.js1682418165493571000 0
 73/home/shivendra/starter/node_modules/core-js/modules/es.regexp.dot-all.js1682418164799116000 0
-47/home/shivendra/starter/dist/index.f7626f62.css1683031198147564053 0
+47/home/shivendra/starter/dist/index.f7626f62.css1683644556747492717 0
 75/home/shivendra/starter/node_modules/core-js/full/typed-array/int8-array.js1682418165103694000 0
 63/home/shivendra/starter/node_modules/core-js/full/dom-exception1682418165459288000 1
 67/home/shivendra/starter/node_modules/core-js/web/dom-collections.js1682418164730131000 0
@@ -3977,7 +3978,7 @@
 68/home/shivendra/starter/node_modules/core-js/full/clear-immediate.js1682418164670473000 0
 62/home/shivendra/starter/node_modules/parcel/src/.eslintrc.json1682880086828621347 0
 58/home/shivendra/starter/node_modules/chokidar/package.json1682880086828621347 0
-23/home/shivendra/starter1682880087216569720 1
+23/home/shivendra/starter1683034865432844941 1
 72/home/shivendra/starter/node_modules/core-js/features/string/trim-end.js1682418165472230000 0
 78/home/shivendra/starter/node_modules/core-js/full/string/virtual/trim-right.js1682418165488610000 0
 68/home/shivendra/starter/node_modules/caniuse-lite/data/regions/MX.js1682880087040593121 0
@@ -3995,7 +3996,7 @@
 85/home/shivendra/starter/node_modules/@parcel/runtime-js/lib/helpers/get-worker-url.js1682342722988055000 0
 78/home/shivendra/starter/node_modules/core-js/features/reflect/to-string-tag.js1682418165458895000 0
 64/home/shivendra/starter/node_modules/core-js/stable/array-buffer1682418165361700000 1
-39/home/shivendra/starter/dist/index.html1683031198215564127 0
+39/home/shivendra/starter/dist/index.html1683644556751491808 0
 76/home/shivendra/starter/node_modules/core-js/features/async-iterator/some.js1682418165368355000 0
 62/home/shivendra/starter/node_modules/chokidar/types/index.d.ts1682880086844619216 0
 115/home/shivendra/starter/node_modules/@parcel/optimizer-htmlnano/node_modules/css-tree/lib/syntax/node/Identifier.js1682342723473353000 0
@@ -4122,7 +4123,7 @@
 61/home/shivendra/starter/node_modules/core-js/web/immediate.js1682418165019388000 0
 73/home/shivendra/starter/node_modules/@parcel/core/lib/loadParcelPlugin.js1682880086948605365 0
 83/home/shivendra/starter/node_modules/core-js/stable/string/virtual/code-point-at.js1682418164676281000 0
-46/home/shivendra/starter/dist/logo.726d37a8.png1683031198219564132 0
+46/home/shivendra/starter/dist/logo.726d37a8.png1683644556759489990 0
 67/home/shivendra/starter/node_modules/@parcel/core/lib/buildCache.js1682880086908610692 0
 62/home/shivendra/starter/node_modules/core-js/es/array/index.js1682418165049503000 0
 79/home/shivendra/starter/node_modules/caniuse-lite/data/features/magnetometer.js1682880087032594184 0
@@ -4330,7 +4331,7 @@
 74/home/shivendra/starter/node_modules/core-js/features/instance/group-by.js1682418165005457000 0
 73/home/shivendra/starter/node_modules/caniuse-lite/data/features/webusb.js1682880087064589930 0
 54/home/shivendra/starter/node_modules/core-js/es/symbol1682418165518013000 1
-47/home/shivendra/starter/dist/icons.dfd7a6db.svg1683031198215564127 0
+47/home/shivendra/starter/dist/icons.dfd7a6db.svg1683644556755490898 0
 71/home/shivendra/starter/node_modules/core-js/features/string/italics.js1682418165138706000 0
 91/home/shivendra/starter/node_modules/core-js/features/async-disposable-stack/constructor.js1682418164689528000 0
 54/home/shivendra/starter/node_modules/core-js/full/json1682418165459497000 1
@@ -5278,14 +5279,14 @@
 78/home/shivendra/starter/node_modules/core-js/full/object/prevent-extensions.js1682418165259773000 0
 69/home/shivendra/starter/node_modules/core-js/es/instance/ends-with.js1682418164735788000 0
 86/home/shivendra/starter/node_modules/core-js/modules/esnext.typed-array.to-reversed.js1682418164881786000 0
-50/home/shivendra/starter/dist/index.e37f48ea.js.map1683033079685330772 0
+50/home/shivendra/starter/dist/index.e37f48ea.js.map1683650249704755580 0
 57/home/shivendra/starter/node_modules/is-arrayish/index.js1682880600623197860 0
 56/home/shivendra/starter/node_modules/has-flag/index.d.ts1682880086764629872 0
 68/home/shivendra/starter/node_modules/caniuse-lite/data/regions/SC.js1682880087048592056 0
 68/home/shivendra/starter/node_modules/core-js/actual/string/anchor.js1682418164595804000 0
 71/home/shivendra/starter/node_modules/core-js/modules/esnext.map.from.js1682418164853441000 0
 73/home/shivendra/starter/node_modules/core-js/full/object/is-extensible.js1682418165114076000 0
-47/home/shivendra/starter/dist/icons.21bad73c.svg1683031198215564127 0
+47/home/shivendra/starter/dist/icons.21bad73c.svg1683644556755490898 0
 80/home/shivendra/starter/node_modules/core-js/modules/es.data-view.constructor.js1682418164761756000 0
 73/home/shivendra/starter/node_modules/core-js/modules/es.symbol.key-for.js1682418164814153000 0
 74/home/shivendra/starter/node_modules/core-js/modules/es.typed-array.map.js1682418164824131000 0
@@ -6102,7 +6103,7 @@
 73/home/shivendra/starter/node_modules/core-js/stable/math/to-string-tag.js1682418165460832000 0
 77/home/shivendra/starter/node_modules/core-js/full/string/virtual/pad-start.js1682418165249559000 0
 65/home/shivendra/starter/node_modules/core-js/stable/math/hypot.js1682418165017560000 0
-34/home/shivendra/starter/index.html1682536409409783000 0
+34/home/shivendra/starter/index.html1683644556103639104 0
 74/home/shivendra/starter/node_modules/core-js/actual/async-iterator/take.js1682418165413407000 0
 49/home/shivendra/starter/node_modules/import-fresh1682880600623197860 1
 65/home/shivendra/starter/node_modules/core-js/stable/math/acosh.js1682418164586364000 0
@@ -7373,6 +7374,7 @@
 68/home/shivendra/starter/node_modules/caniuse-lite/data/regions/MO.js1682880087036593653 0
 78/home/shivendra/starter/node_modules/core-js/stable/typed-array/int16-array.js1682418165101023000 0
 68/home/shivendra/starter/node_modules/caniuse-lite/data/regions/JE.js1682880087028594716 0
+34/home/shivendra/starter/.gitignore1683035594113351911 0
 68/home/shivendra/starter/node_modules/caniuse-lite/data/regions/NL.js1682880087040593121 0
 67/home/shivendra/starter/node_modules/electron-to-chromium/README.md1682880086872615487 0
 48/home/shivendra/starter/node_modules/is-arrayish1682880600627197635 1
