@@ -29,6 +29,8 @@ const controlRecipes = async function () {
 
     recipeView.renderSpinner();
 
+    resultsView.update(model.getSearchResultsPage());
+
     //Load the recipe
     const val = await model.loadRecipe(id);
 
@@ -74,7 +76,7 @@ const controlServings = function (newServings) {
   //Update the recipe servings
   model.updateSerivngs(newServings);
 
-  recipeView.render(model.state.recipe);
+  recipeView.update(model.state.recipe);
 };
 
 const init = function () {

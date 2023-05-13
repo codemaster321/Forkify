@@ -1,4 +1,5 @@
 import icons from 'url:../../img/icons.svg';
+import * as model from '../model';
 
 export default class View {
   _data;
@@ -11,6 +12,42 @@ export default class View {
     const markup = this._generateMarkup();
     this._clear();
     this._parentElement.insertAdjacentHTML('afterbegin', markup);
+  }
+
+  update(data) {
+    // if (!data || (Array.isArray(data) && data.length === 0)) {
+    //   console.log(data);
+    //   console.log(model.state);
+    //   return this.renderError();
+    // }(this code was causing an error, on reloading the website when the recipes are already loaded, this was rendering an error
+
+    this._data = data;
+    const newMarkup = this._generateMarkup();
+
+    const newDom = document.createRange().createContextualFragment(newMarkup);
+
+    const newElements = Array.from(newDom.querySelectorAll('*'));
+    console.log('heello', newElements);
+    const currElements = Array.from(this._parentElement.querySelectorAll('*'));
+
+    newElements.forEach((newEl, i) => {
+      const currEl = currElements[i];
+
+      //Updates changed text
+      if (
+        !currEl.isEqualNode(newEl) &&
+        newEl.firstChild?.nodeValue.trim() !== ''
+      ) {
+        console.log('text', newEl.firstChild);
+        currEl.textContent = newEl.textContent;
+      }
+
+      if (!newEl.isEqualNode(currEl)) {
+        Array.from(newEl.attributes).forEach(attr => {
+          currEl.setAttribute(attr.name, attr.value);
+        });
+      }
+    });
   }
 
   _clear() {
