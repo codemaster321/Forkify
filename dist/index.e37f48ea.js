@@ -638,7 +638,11 @@ const controlAddBookmark = function() {
     //render bookmarks
     (0, _bookmarksViewJsDefault.default).render(_modelJs.state.bookmarks);
 };
+const controlBookmarks = function() {
+    (0, _bookmarksViewJsDefault.default).render(_modelJs.state.bookmarks);
+};
 const init = function() {
+    (0, _bookmarksViewJsDefault.default).addHandlerRender(controlBookmarks);
     (0, _recipeViewJsDefault.default).addHandlerender(controlRecipes);
     (0, _recipeViewJsDefault.default).addHandlerUpdatedServings(controlServings);
     (0, _recipeViewJsDefault.default).addHandlerAddBookmark(controlAddBookmark);
@@ -2111,15 +2115,26 @@ const updateSerivngs = function(newServings) {
     });
     state.recipe.servings = newServings;
 };
+const persistBookmarks = function() {
+    localStorage.setItem("bookmarks", JSON.stringify(state.bookmarks));
+};
 const addBookmark = function(recipe) {
     state.bookmarks.push(recipe);
     state.recipe.bookmarked = true;
+    persistBookmarks();
 };
 const deleteBookmark = function(id) {
     const index = state.bookmarks.findIndex((el)=>el.id === id);
     state.bookmarks.splice(index, 1);
     state.recipe.bookmarked = false;
+    persistBookmarks();
 };
+const init = function() {
+    const bookmarks = localStorage?.getItem("bookmarks");
+    state.bookmarks = JSON.parse(bookmarks);
+};
+init(); //clearing local storage code
+ //localStorage.clear('bookmarks');
 
 },{"regenerator-runtime":"dXNgZ","./config":"k5Hzs","./views/helpers":"YS2Ox","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"dXNgZ":[function(require,module,exports) {
 /**
@@ -3387,6 +3402,9 @@ class BookmarksView extends (0, _viewDefault.default) {
     _parentElement = document.querySelector(".bookmarks__list");
     _errorMessage = "No bookmarks yet";
     _message = "";
+    addHandlerRender(handler) {
+        window.addEventListener("load", handler);
+    }
     _generateMarkup() {
         return this._data.map((result)=>(0, _previewViewDefault.default).render(result, false)).join("");
     }
