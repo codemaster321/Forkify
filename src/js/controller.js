@@ -59,12 +59,13 @@ const controlSearchResults = async function () {
 
     //Load search results
     await model.loadSearchResults(query);
-    console.log(model.state.search.results);
+    //console.log(model.state.search.results);
     resultsView.render(model.getSearchResultsPage(1));
 
     paginationView.render(model.state.search);
   } catch (err) {
     console.log(err);
+    resultsView.renderError(err.message);
   }
 };
 
@@ -95,6 +96,7 @@ const controlAddBookmark = function () {
 };
 
 const controlBookmarks = function () {
+  console.log(model.state.bookmarks);
   bookmarksView.render(model.state.bookmarks);
 };
 
@@ -119,6 +121,10 @@ const controlAddRecipe = async function (newRecipe) {
     setTimeout(function () {
       addRecipeView._toggleWindow();
     }, 2500);
+
+    setTimeout(function () {
+      addRecipeView.replaceMethod();
+    }, 3000);
   } catch (err) {
     console.error(err);
     addRecipeView.renderError(err.message);
