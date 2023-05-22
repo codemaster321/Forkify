@@ -3563,6 +3563,7 @@ class BookmarksView extends (0, _viewDefault.default) {
                 <svg>
                   <use href="${0, _iconsSvgDefault.default}#icon-user"></use>
                 </svg>
+                </div>
               </div>
             </a>
           </li>`;
