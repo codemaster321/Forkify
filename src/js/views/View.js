@@ -38,7 +38,7 @@ export default class View {
       //Updates changed text
       if (
         !currEl.isEqualNode(newEl) &&
-        newEl.firstChild?.nodeValue.trim() !== ''
+        newEl.firstChild?.nodeValue?.trim() !== ''
       ) {
         //console.log('text', newEl.firstChild);
         currEl.textContent = newEl.textContent;
@@ -76,6 +76,21 @@ export default class View {
         <div>
           <svg>
             <use href="${icons}#icon-alert-triangle"></use>
+          </svg>
+        </div>
+        <p>${message}</p>
+      </div>;`;
+
+    this._clear();
+    this._parentElement.insertAdjacentHTML('afterbegin', markup);
+  }
+
+  renderMessage(message = this._message) {
+    const markup = `
+      <div class="message">
+        <div>
+          <svg>
+            <use href="${icons}#icon-alert-smile"></use>
           </svg>
         </div>
         <p>${message}</p>
