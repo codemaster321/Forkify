@@ -32,6 +32,7 @@ const controlRecipes = async function () {
     recipeView.renderSpinner();
 
     resultsView.render(model.getSearchResultsPage());
+    if (!model.state.bookmarks) bookmarks = [];
     bookmarksView.update(model.state.bookmarks);
 
     //Load the recipe
