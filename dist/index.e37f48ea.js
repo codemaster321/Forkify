@@ -2124,14 +2124,17 @@ const loadRecipe = async function(id) {
 const loadSearchResults = async function(query) {
     try {
         state.search.query = query;
-        const data = await (0, _helpers.getJSON)(`${(0, _config.API_URL)}?search=${query}?key=${(0, _config.KEY)}`);
+        const data = await (0, _helpers.getJSON)(`${(0, _config.API_URL)}?search=${query}&key=${(0, _config.KEY)}`);
         console.log(data);
         state.search.results = data.data.recipes.map((rec)=>{
             return {
                 id: rec.id,
                 title: rec.title,
                 publisher: rec.publisher,
-                image: rec.image_url
+                image: rec.image_url,
+                ...rec.key && {
+                    key: rec.key
+                }
             };
         });
     } catch (err) {
@@ -2184,6 +2187,7 @@ const uploadRecipe = async function(newRecipe) {
                 description
             };
         });
+        //console.log('ENtrieesssssssssssssssssssssssssssssssssss', entries);
         const recipe = {
             title: newRecipe.title,
             source_url: newRecipe.sourceUrl,
@@ -2191,9 +2195,9 @@ const uploadRecipe = async function(newRecipe) {
             publisher: newRecipe.publisher,
             cooking_time: +newRecipe.cookingTime,
             servings: +newRecipe.servings,
-            entries
+            ingredients: entries
         };
-        console.log(recipe);
+        console.log("this recipeeeeeeeeeeeeeeee", recipe);
         const sentRecipe = await (0, _helpers.sendJSON)(`${(0, _config.API_URL)}?key=${(0, _config.KEY)}`, recipe);
         console.log("Success", sentRecipe);
         state.recipe = createRecipeObject(sentRecipe);
@@ -2798,7 +2802,7 @@ parcelHelpers.export(exports, "TIMEOUT_SEC", ()=>TIMEOUT_SEC);
 parcelHelpers.export(exports, "KEY", ()=>KEY);
 const API_URL = "https://forkify-api.herokuapp.com/api/v2/recipes/";
 const TIMEOUT_SEC = 10;
-const KEY = "7c62d5e1-4a66-4ca7-a321-80a33ced6bbc";
+const KEY = "0297cccf-3548-4030-8d3d-1bb5ec1f88bd";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -2957,6 +2961,7 @@ class RecipeView extends (0, _viewDefault.default) {
   <div class="recipe__ingredients">
     <h2 class="heading--2">Recipe ingredients</h2>
     <ul class="recipe__ingredient-list">
+
 
     ${this._data.ingredients.map(this._generatedIngredient).join("")}
 

@@ -49,7 +49,7 @@ export const loadRecipe = async function (id) {
 export const loadSearchResults = async function (query) {
   try {
     state.search.query = query;
-    const data = await getJSON(`${API_URL}?search=${query}?key=${KEY}`);
+    const data = await getJSON(`${API_URL}?search=${query}&key=${KEY}`);
     console.log(data);
 
     state.search.results = data.data.recipes.map(rec => {
@@ -58,6 +58,7 @@ export const loadSearchResults = async function (query) {
         title: rec.title,
         publisher: rec.publisher,
         image: rec.image_url,
+        ...(rec.key && { key: rec.key }),
       };
     });
   } catch (err) {
@@ -132,6 +133,8 @@ export const uploadRecipe = async function (newRecipe) {
         return { quantity: quantity ? +quantity : null, unit, description };
       });
 
+    //console.log('ENtrieesssssssssssssssssssssssssssssssssss', entries);
+
     const recipe = {
       title: newRecipe.title,
       source_url: newRecipe.sourceUrl,
@@ -139,10 +142,10 @@ export const uploadRecipe = async function (newRecipe) {
       publisher: newRecipe.publisher,
       cooking_time: +newRecipe.cookingTime,
       servings: +newRecipe.servings,
-      entries,
+      ingredients: entries,
     };
 
-    console.log(recipe);
+    console.log('this recipeeeeeeeeeeeeeeee', recipe);
 
     const sentRecipe = await sendJSON(`${API_URL}?key=${KEY}`, recipe);
     console.log('Success', sentRecipe);

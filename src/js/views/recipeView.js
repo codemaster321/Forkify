@@ -91,6 +91,7 @@ class RecipeView extends View {
     <h2 class="heading--2">Recipe ingredients</h2>
     <ul class="recipe__ingredient-list">
 
+
     ${this._data.ingredients.map(this._generatedIngredient).join('')}
 
       
